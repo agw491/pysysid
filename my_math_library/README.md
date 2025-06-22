@@ -60,25 +60,24 @@ result = m1 * m2
 
 ```bash
 # Install development dependencies
-uv pip install -e ".[dev]"
+uv sync --dev
 
 # Run tests
-pytest
+uv run pytest
 
 # Format code
-black src/ tests/
-isort src/ tests/
+uv run black .
 
-# Type checking
-mypy src/
 ```
 
 ### Building
 
-The C++ extensions are automatically built when you install the package. If you need to rebuild:
+The C++ extensions are automatically built when you install the package. If you need to rebuild
+simply rerun:
 
 ```bash
-uv pip install -e . --force-reinstall --no-deps
+uv sync
+
 ```
 
 ## Requirements

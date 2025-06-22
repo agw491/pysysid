@@ -1,8 +1,16 @@
 import pytest
 from my_math_library import (
-    add, multiply, power, add_vectors, dot_product,
-    mean, variance, standard_deviation, Matrix,
-    create_identity_matrix, create_zeros_matrix
+    add,
+    multiply,
+    power,
+    add_vectors,
+    dot_product,
+    mean,
+    variance,
+    standard_deviation,
+    Matrix,
+    create_identity_matrix,
+    create_zeros_matrix,
 )
 
 

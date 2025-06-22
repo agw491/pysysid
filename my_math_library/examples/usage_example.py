@@ -3,9 +3,16 @@ Example usage of the my_math_library package.
 """
 
 from my_math_library import (
-    add, multiply, power, add_vectors, dot_product,
-    mean, variance, standard_deviation, Matrix,
-    create_identity_matrix
+    add,
+    multiply,
+    power,
+    add_vectors,
+    dot_product,
+    mean,
+    variance,
+    standard_deviation,
+    Matrix,
+    create_identity_matrix,
 )
 
 
@@ -42,11 +49,8 @@ def main():
     print("Matrix Operations:")
 
     # Create matrices
-    matrix_a = Matrix([[1.0, 2.0, 3.0],
-                       [4.0, 5.0, 6.0]])
-    matrix_b = Matrix([[7.0, 8.0],
-                       [9.0, 10.0],
-                       [11.0, 12.0]])
+    matrix_a = Matrix([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
+    matrix_b = Matrix([[7.0, 8.0], [9.0, 10.0], [11.0, 12.0]])
 
     print(f"Matrix A (2x3): {matrix_a}")
     print("Matrix A data:")

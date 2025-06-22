@@ -28,6 +28,7 @@ __all__ = [
     "Matrix",
 ]
 
+
 def create_identity_matrix(size: int) -> Matrix:
     """Create an identity matrix of given size."""
     matrix = Matrix(size, size)
@@ -35,9 +36,11 @@ def create_identity_matrix(size: int) -> Matrix:
         matrix.set(i, i, 1.0)
     return matrix
 
+
 def create_zeros_matrix(rows: int, cols: int) -> Matrix:
     """Create a matrix filled with zeros."""
     return Matrix(rows, cols)
+
 
 def create_matrix_from_list(data: List[List[float]]) -> Matrix:
     """Create a matrix from a 2D Python list."""
